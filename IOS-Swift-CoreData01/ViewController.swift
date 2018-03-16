@@ -86,7 +86,11 @@ class ViewController: UIViewController {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "CityLib")
         let searchString = self.serachFor?.text
         
-        request.predicate = NSPredicate(format: "cityName CONTAINS[cd] %@", searchString!)
+        request.predicate = NSPredicate(format: "cityName CONTAINS[cd] %@", searchString!) // contains case insensitive
+        //        request.predicate = NSPredicate(format: "cityName CONTAINS %@", searchString!)   // contains case sensitive
+        //        request.predicate = NSPredicate(format: "cityName LIKE[cd] %@", searchString!)   // like case insensitive
+        //        request.predicate = NSPredicate(format: "cityName ==[cd] %@", searchString!)     // equal case insensitive
+        //        request.predicate = NSPredicate(format: "cityName == %@", searchString!)   // equal case sensitive
         var outputSRT = ""
         do {
             let result = try context.fetch(request)
