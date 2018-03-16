@@ -12,6 +12,8 @@
 		FAAE9D0A205AEC710052109F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAE9D08205AEC710052109F /* Main.storyboard */; };
 		FAAE9D0C205AEC710052109F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAE9D0B205AEC710052109F /* Assets.xcassets */; };
 		FAAE9D0F205AEC710052109F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAE9D0D205AEC710052109F /* LaunchScreen.storyboard */; };
+		FAAE9D1B205AF1850052109F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAAE9D19205AF1850052109F /* Model.xcdatamodeld */; };
+		FAAE9D1D205AF2870052109F /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE9D1C205AF2870052109F /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FAAE9D0B205AEC710052109F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAE9D0E205AEC710052109F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAAE9D10205AEC710052109F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAE9D1A205AF1850052109F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FAAE9D1C205AF2870052109F /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				FAAE9D04205AEC700052109F /* AppDelegate.swift */,
+				FAAE9D1C205AF2870052109F /* CityViewController.swift */,
 				FAAE9D06205AEC700052109F /* ViewController.swift */,
 				FAAE9D08205AEC710052109F /* Main.storyboard */,
 				FAAE9D0B205AEC710052109F /* Assets.xcassets */,
 				FAAE9D0D205AEC710052109F /* LaunchScreen.storyboard */,
 				FAAE9D10205AEC710052109F /* Info.plist */,
+				FAAE9D19205AF1850052109F /* Model.xcdatamodeld */,
 			);
 			path = "IOS-Swift-CoreData01";
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			files = (
 				FAAE9D07205AEC700052109F /* ViewController.swift in Sources */,
 				FAAE9D05205AEC700052109F /* AppDelegate.swift in Sources */,
+				FAAE9D1B205AF1850052109F /* Model.xcdatamodeld in Sources */,
+				FAAE9D1D205AF2870052109F /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +328,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAAE9D19205AF1850052109F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAAE9D1A205AF1850052109F /* Model.xcdatamodel */,
+			);
+			currentVersion = FAAE9D1A205AF1850052109F /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FAAE9CF9205AEC700052109F /* Project object */;
 }
